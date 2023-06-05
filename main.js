@@ -20,7 +20,7 @@ const camera = new OrthographicCamera(
 camera.position.z = 0;
 
 // Create a renderer
-const renderer = new WebGLRenderer({ samples: 4, antialias: true });
+const renderer = new WebGLRenderer({ antialias: true });
 renderer.setSize(res, res);
 document.body.appendChild(renderer.domElement);
 
@@ -53,7 +53,7 @@ function createLines() {
     } 
 
     let dashed = Math.random() > 0.5;
-    let dashScale = 1; // Math.random() * 100 + 15;
+    let dashScale = 1;
     let dashSize = Math.pow(Math.random(), 2) * 15 + 4;
     let gapSize = dashSize * (0.5 + Math.random() * 1);
 
